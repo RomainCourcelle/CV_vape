@@ -1,0 +1,232 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+h1
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 350%;
+    margin: 0;
+}
+h2
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 150%;
+    margin: 0;
+}
+h3
+{
+    font-family: 'Raleway', sans-serif;
+
+}
+p, li, a
+{
+    font-family: 'Open Sans', sans-serif;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+/*--------------------------------------------*/
+header
+{
+    margin-top: 3%;
+}
+#bloc_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+#presentation {
+    padding-left: 50px;
+}
+.bandelette_bleu_head
+{
+    width: 100%;
+    height: 10px;
+    background-color: #7C7C7C;
+}
+.boutt_contact
+{
+    cursor: pointer;
+    background-color: #7C7C7C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #7C7C7C;
+    border-radius: 50px;
+    width: 175px;
+    height: 40px;
+    transition: all 400ms;
+}
+.boutt_contact:hover
+{
+    transform: scale(1.1);
+}
+#img_profil
+{
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    border-radius: 100%;
+    object-fit: cover;
+}
+/*----------------------------------------------------*/
+#bloc_competences
+{
+    margin-top: 5%;
+    padding-bottom: 2%;
+    width: 100%;
+    height: auto;
+    background-color: #7C7C7C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titre
+{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 300px;
+    height: 75px;
+    color: black;
+}
+#bloc_competences_lang
+{
+    margin-top: 30px;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.barre_competences
+{
+    width: 300px;
+    height: 100px;
+}
+/*-----------------------------------------------------*/
+#bloc_experiences_formations
+{
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 98%;
+    height: auto;
+    display: flex;
+}
+.bloc_forma_exp
+{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-left: 15px solid #7C7C7C;
+    border-radius: 15px;
+}
+.liseret_exp_form
+{
+    margin: 20px;
+    padding: 0;
+    width: 15px;
+    border-radius: 10px;
+    background-color: #7C7C7C;
+}
+/*---------------------------------*/
+footer
+{
+
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3%;
+}
+#bloc_centre_interet
+{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+}
+#boutt_contact_phone {
+    display: none;
+}
+.logo_footer {
+    width: 75px;
+}
+/*--------------------------------------*/
+@media only screen and (max-width : 600px) 
+{
+    #bloc_header
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    #presentation {
+        padding: 0 40px;
+    }
+
+    #boutt_contact_pc {
+        display: none;
+    }
+    .boutt_contact
+    {
+        transition: none;
+    }
+    .boutt_contact:hover
+    {
+        transform: none;
+    }
+
+    #bloc_competences
+    {
+        margin-top: 10%;
+    }
+    #bloc_competences_lang
+    {
+        width: 100%;
+    }
+    .barre_competences
+    {
+        width: 50%;
+        height: 115px;
+    }
+
+
+    .bloc_forma_exp
+    {
+        width: 80%;
+        margin-top: 5%;
+    }
+    #bloc_experiences_formations
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bloc_centre_interet
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #boutt_contact_phone {
+        display: flex;
+        margin-bottom: 2%;
+    }
+}
